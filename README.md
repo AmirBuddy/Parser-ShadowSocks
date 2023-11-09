@@ -7,11 +7,11 @@ This is a Python script that helps you generate a configuration file for Shadows
 
 ## Usage
 1. Place your Shadowsocks links in a file called `shadowsocks.txt`, with each link on a separate line.
-2. Run the script using the command `python script.py`.
+2. Run the script using the command `python convertor.py`.
 3. The script will generate a configuration file named `config.conf` in the same directory.
 
 ## Configuration File Format
-The generated `config.conf` file follows the format accepted by Shadowsocks clients. It includes a `[General]` section with some default settings and a `[Proxy]` section that lists the configured proxies. Additionally, a `[Proxy Group]` section is created with a group named `SelectGroup` that includes all the configured proxies.
+The generated `config.conf` file follows the format accepted by Shadowsocks clients (which is my custom class like application). It includes a `[General]` section with some default settings and a `[Proxy]` section that lists the configured proxies. Additionally, a `[Proxy Group]` section is created with a group named `SelectGroup` that includes all the configured proxies.
 
 ## Note
 - Make sure you have the necessary permissions to read `shadowsocks.txt` and write to `config.conf`.
